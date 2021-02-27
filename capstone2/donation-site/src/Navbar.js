@@ -92,7 +92,7 @@ function Navbar() {
             </li>
           
             <li>
-            <Link to={!user && '/login'}>
+            <Link to={!user && '/login2'}>
           <div onClick={handleAuthenticaton} className="nav-links-mobile">
             
             <span >{user ? 'Sign Out' : 'Sign In'}</span>
