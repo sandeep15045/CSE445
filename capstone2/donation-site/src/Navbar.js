@@ -43,9 +43,9 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            {/* <img
+             <img
             src={logo}
-            /> */}
+            /> 
              H 4 U
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -63,7 +63,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                PastDonations
+                Donate/Volunteer
               </Link>
             </li>
             <li className='nav-item'>

@@ -3,9 +3,9 @@ import './Cards.css';
 import CardItem from './CardItem';
 import img from "./img-1.jpg";
 import img1 from "./img-2.jpg";
-import img2 from "./img-3.jpg";
-import img3 from "./img-4.jpg";
-import img4 from "./img-5.jpg";
+import img2 from "./img-10.jpg";
+import img3 from "./img-11.jpg";
+import img4 from "./img-12.jpg";
 import img5 from "./img-6.jpg";
 import img6 from "./img-7.jpg";
 function Cards() {
@@ -17,14 +17,14 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={img}
-              text='Entertainment for orphanage childrens to make their life interesting'
+              text='Save the orphans initiative '
               label='Kolkata'
               // path='/services'
               
             />
             <CardItem
               src={img1}
-              text='Education for Slum Childrens'
+              text='Gyaan Initiative for underprevilaged kids'
               label='Jaipur'
               path='/services'
             />
@@ -32,20 +32,20 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src={img2}
-              text='Shelters for cows which also server milk to poor'
+              text='Cow Shelter and old age home '
               label='Mathura'
               path='/services'
             />
             <CardItem
               src={img3}
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              text='Pet Adoption and Rescue Center'
+              label='Ahemdabad'
               path='/products'
             />
             <CardItem
               src={img4}
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              text='Clean Beaches Initiative'
+              label='Mumbai'
               path='/sign-up'
             />
           </ul>
