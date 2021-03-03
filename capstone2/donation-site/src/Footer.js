@@ -2,21 +2,22 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+//import window.location.href = 'https://www.instagram.com/' as insta;
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Creat your own Centers by joining us 
+          Get your center registered on our website
         </p>
         <p className='footer-subscription-text'>
-          You can Put Request at any time
+          Put Request at any time
         </p>
         <div className='input-areas'>
           <form>
           
-            <Button buttonStyle='btn--outline'>Contact Us</Button>
+            <Button buttonStyle='btn--outline' onClick={event =>  window.location.href='https://forms.gle/FgHAxA7eajBtSFsJ7'}>Get Registered</Button>
           </form>
         </div>
       </section>
@@ -24,34 +25,28 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/'>The Team</Link>
             <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
+            <h2>Feature</h2>
             <Link to='/'>Submit Video</Link>
             <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+          <a href="https://www.instagram.com/">Instagram</a>
+            <a href='https://www.facebook.com/'>Facebook</a>
+            <a href='https://www.youtube.com/'>Youtube</a>
+            <a href='https://www.twitter.com/'>Twitter</a>
           </div>
         </div>
       </div>

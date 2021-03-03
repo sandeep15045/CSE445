@@ -1,4 +1,6 @@
 import React from 'react';
+import './Login2.css'
+
 
 const Login2 = (props) => {
     const {
@@ -15,7 +17,13 @@ const Login2 = (props) => {
     } = props;
 
     return(
-        <section className = 'login'>
+        
+        <section className = 'login'> 
+            <div class="wrap" >
+            < a href="./Home.js">  
+            <button class="button" >Home</button>
+            </a>
+            </div>
             <div className='loginContainer'>
                 <label> Username </label>
                 <input 

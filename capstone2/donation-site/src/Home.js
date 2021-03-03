@@ -6,7 +6,7 @@ import wti from "./wti.jpg";
 import cry from "./cry.png";
 import give from "./give.jpg";
 import goonj from "./goonj.png";
-import ram from "./rammandir.jpg";
+import trees from "./trees.png";
 import Cards from "./Cards";
 import Footer from "./Footer";
 import video from './video.mp4';
@@ -20,7 +20,7 @@ function Home() {
       <img className="home__image" src={homepage} />
      
         
-        <h1 className="tags1">Donation</h1>
+        <h1 className="tags1">Donate to charities</h1>
         <div className="home__row">
           <Product
             id="12321341"
@@ -60,10 +60,10 @@ function Home() {
         <div className="home__row">
           <Product
             id="4903850"
-            title="Donation For Ram Mandir"
+            title="Donate to team trees"
             price={100}
             
-            image={ram}
+            image={trees}
           />
          
          
