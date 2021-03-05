@@ -8,6 +8,7 @@ import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
 import Navbar from "./Navbar";
+import Categories from './Categories';
 // import { auth } from "./firebase";
 // import { useStateValue } from "./StateProvider";
 // import { loadStripe } from "@stripe/stripe-js";
@@ -64,10 +65,14 @@ function App() {
               <Payment />
             {/* </Elements> */}
           </Route>
+          <Route path ="/categories">
+            <Categories/>
+          </Route>
           <Route path="/">
             <Navbar />
             <Home />
           </Route>
+
         </Switch>
       </div>
     </Router>
