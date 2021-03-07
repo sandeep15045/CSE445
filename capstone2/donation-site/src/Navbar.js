@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 
+=======
+>>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
 import './Navbar.css';
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-// import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 
@@ -42,10 +44,16 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+<<<<<<< HEAD
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+=======
+          <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
+           
+>>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
              H 4 U
              <p className="tagline">Help for You</p>
           </Link>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -68,6 +76,7 @@ function Navbar() {
                 About
               </Link>
             </li>
+<<<<<<< HEAD
             {/* <li className='nav-item'>
             <Link
                 to='/team'
@@ -77,15 +86,19 @@ function Navbar() {
               
               </Link>
             </li> */}
+=======
+
+>>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
             <li className='nav-item'>
               <Link
-                to='/services'
+                to= {'/categories'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 PastDonations
               </Link>
             </li>
+
             <li className='nav-item'>
               <Link
                 to={!user && '/login'}
