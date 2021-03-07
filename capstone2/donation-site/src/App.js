@@ -8,6 +8,7 @@ import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
 import Navbar from "./Navbar";
+import Team from "./Team";
 // import { auth } from "./firebase";
 // import { useStateValue } from "./StateProvider";
 // import { loadStripe } from "@stripe/stripe-js";
@@ -59,9 +60,15 @@ function App() {
             <Checkout />
           </Route>
           <Route path="/payment">
-            <Header />
+            <Navbar />
             {/* <Elements stripe={promise}> */}
               <Payment />
+            {/* </Elements> */}
+          </Route>
+          <Route path="/team">
+            <Navbar />
+            {/* <Elements stripe={promise}> */}
+              <Team />
             {/* </Elements> */}
           </Route>
           <Route path="/">

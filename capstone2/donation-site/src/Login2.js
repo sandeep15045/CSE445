@@ -20,7 +20,7 @@ const Login2 = (props) => {
         
         <section className = 'login'> 
             <div class="wrap" >
-            < a href="./Home.js">  
+            < a href="/">  
             <button class="button" >Home</button>
             </a>
             </div>
