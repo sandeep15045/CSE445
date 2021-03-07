@@ -7,8 +7,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
   }
-  
+  .login{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
   .button {
     width: 140px;
     height: 45px;

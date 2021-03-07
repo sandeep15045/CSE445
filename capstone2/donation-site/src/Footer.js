@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import logo from './logo.png';
 //import window.location.href = 'https://www.instagram.com/' as insta;
 
 function Footer() {
@@ -25,7 +26,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/'>The Team</Link>
+            <Link to='/team'>The Team</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
@@ -54,11 +55,14 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              H4U
+              <img
+              src={logo}
+              />
+              {/* <i class='fab fa-typo3' /> */}
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>Help For You © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

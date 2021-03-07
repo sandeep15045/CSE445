@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   position: sticky;
-  top: 0;
+  top: -10px;
   z-index: 999;
 }
 
@@ -24,13 +24,16 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 25px;
   display: flex;
   align-items: center;
-  position: sticky;
 }
-
+.tagline {
+  font-size: 10px;
+}
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;
@@ -38,7 +41,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(7, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -109,7 +112,7 @@
   .nav-links {
     text-align: center;
     padding: 2rem;
-    width: 100%;
+    width: 60%;
     display: table;
   }
 
