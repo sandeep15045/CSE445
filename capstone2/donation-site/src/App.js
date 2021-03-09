@@ -8,11 +8,8 @@ import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
 import Navbar from "./Navbar";
-<<<<<<< HEAD
-import Team from "./Team";
-=======
 import Categories from './Categories';
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
+import Animal from './Animal';
 // import { auth } from "./firebase";
 // import { useStateValue } from "./StateProvider";
 // import { loadStripe } from "@stripe/stripe-js";
@@ -69,16 +66,11 @@ function App() {
               <Payment />
             {/* </Elements> */}
           </Route>
-<<<<<<< HEAD
-          <Route path="/team">
-            <Navbar />
-            {/* <Elements stripe={promise}> */}
-              <Team />
-            {/* </Elements> */}
-=======
           <Route path ="/categories">
             <Categories/>
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
+          </Route>
+          <Route path ="/Animal">
+            <Animal/>
           </Route>
           <Route path="/">
             <Navbar />

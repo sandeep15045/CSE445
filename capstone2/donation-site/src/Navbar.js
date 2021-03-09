@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-
-=======
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
 import './Navbar.css';
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
@@ -44,12 +40,8 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-<<<<<<< HEAD
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-=======
           <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
            
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
              H 4 U
              <p className="tagline">Help for You</p>
           </Link>
@@ -76,26 +68,13 @@ function Navbar() {
                 About
               </Link>
             </li>
-<<<<<<< HEAD
-            {/* <li className='nav-item'>
-            <Link
-                to='/team'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-              
-              </Link>
-            </li> */}
-=======
-
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
             <li className='nav-item'>
               <Link
                 to= {'/categories'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                PastDonations
+                Donate/Vounteer
               </Link>
             </li>
 

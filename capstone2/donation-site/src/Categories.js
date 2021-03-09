@@ -17,7 +17,7 @@ function Categories() {
         <div>
             <Navbar/>
             <div className="Head" >
-            <h2>Categories</h2>
+            <h1>Categories</h1>
             </div>
             <div className='cards'>
             <div className='cards__container'>
@@ -34,15 +34,19 @@ function Categories() {
             <CardItem
             src={women}
             text='Women Health and Safety'
+
             />
             <CardItem
             src={senior}
             text='Senior Citizen'
             />
+            
             <CardItem
             src={animal}
             text='Animal Welfare'
+            path = "./Animal"
             />
+            
             </ul>
             </div>
            </div>
