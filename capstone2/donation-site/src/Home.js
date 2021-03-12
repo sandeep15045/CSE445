@@ -10,14 +10,14 @@ import trees from "./trees.png";
 import Cards from "./Cards";
 import Footer from "./Footer";
 import video from './video.mp4';
-import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallaryComponent from "./ImageGallaryComponent";
 
 import HeroSection from "./HeroSection";
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-      <img className="home__image" src={homepage} />
+      <ImageGallaryComponent />
      
         
         <h1 className="tags1">Donate to charities</h1>
