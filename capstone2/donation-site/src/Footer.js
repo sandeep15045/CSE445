@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import logo from './logo.png';
+import logo from './assets/logo.png';
 //import window.location.href = 'https://www.instagram.com/' as insta;
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/team'>The Team</Link>
-            <Link to='/'>Testimonials</Link>
+            <Link to=''>Testimonials</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>

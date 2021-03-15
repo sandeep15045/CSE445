@@ -120,3 +120,7 @@ button {
   padding: 8px 0;
   background: #3a2b58;
 }
+.header_logo {
+  text-decoration: none;
+  color: white;
+}

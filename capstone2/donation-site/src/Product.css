@@ -31,11 +31,11 @@
 }
 
 .product > button {
-  background: #694bf0;
+  background: rgb(66, 103, 178);
   border: 1px solid;
   margin-top: 10px;
   border-color: #694bf0 #694bf0 #694bf0;
-  color: #111;
+  color: rgb(255, 255, 255);
   width: 100%;
 }
 

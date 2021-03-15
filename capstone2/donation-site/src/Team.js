@@ -1,13 +1,9 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import img from "./img-1.jpg";
-import img1 from "./img-2.jpg";
-import img2 from "./img-10.jpg";
-import img3 from "./img-11.jpg";
-import img4 from "./img-12.jpg";
-import img5 from "./img-6.jpg";
-import img6 from "./img-7.jpg";
+import sandeep from './assets/sandeep.jpeg';
+import kuldeep from './assets/kuldeep.jpg';
+import krish from './assets/krish.jfif';
 function Team() {
   return (
     <div className='cards'>
@@ -17,22 +13,22 @@ function Team() {
          
           <ul className='cards__items'>
             <CardItem
-              src={img2}
-              text='Cow Shelter and old age home '
-              label='Mathura'
-              path='/services'
+              src={kuldeep}
+              text='Kuldeep'
+              label='CSE'
+              
             />
             <CardItem
-              src={img3}
-              text='Pet Adoption and Rescue Center'
-              label='Ahemdabad'
-              path='/products'
+              src={krish}
+              text='Krishna '
+              label='CSE'
+             
             />
             <CardItem
-              src={img4}
-              text='Clean Beaches Initiative'
-              label='Mumbai'
-              path='/sign-up'
+              src={sandeep}
+              text='Sandeep'
+              label='CSE'
+             
             />
           </ul>
         </div>

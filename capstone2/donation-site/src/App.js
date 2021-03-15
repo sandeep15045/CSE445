@@ -1,20 +1,24 @@
-// import React, { useEffect } from "react";
+import React, { useEffect ,useState} from "react";
 import "./App.css";
-import Header from "./Header";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
+import Jaipur from "./locations/jaipurNGOmap"
 import Payment from "./Payment";
 import Orders from "./Orders";
 import Navbar from "./Navbar";
-<<<<<<< HEAD
 import Team from "./Team";
-=======
-import Categories from './Categories';
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
-// import { auth } from "./firebase";
-// import { useStateValue } from "./StateProvider";
+import Download from "./Download";
+import Categories from "./Categories";
+import Women from "./categories/Women";
+import About from "./About";
+import { auth } from "./firebase";
+import { useStateValue } from "./StateProvider";
+import Kolkata from "./locations/kolkataNGO";
+import Mathura from "./locations/mathuraNGO";
+import PuffLoader from "react-spinners/PuffLoader";
+import vid from "./loadingvi.mp4"
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 
@@ -23,66 +27,133 @@ import Categories from './Categories';
 // );
 
 function App() {
-  // const [{}, dispatch] = useStateValue();
+  
+  const [{}, dispatch] = useStateValue();
 
-  // useEffect(() => {
-  //   // will only run once when the app component loads...
+  const[loading,setLoading]=useState(false);
+  useEffect(()=>{
+        setLoading(true)
+        setTimeout(()=>{
+          setLoading(false)
+        },2000)
+},[])
 
-  //   auth.onAuthStateChanged((authUser) => {
-  //     console.log("THE USER IS >>> ", authUser);
+  useEffect(() => {
+    // will only run once when the app component loads...
 
-  //     if (authUser) {
-  //       // the user just logged in / the user was logged in
+    auth.onAuthStateChanged((authUser) => {
+      console.log("THE USER IS >>> ", authUser);
 
-  //       dispatch({
-  //         type: "SET_USER",
-  //         user: authUser,
-  //       });
-  //     } else {
-  //       // the user is logged out
-  //       dispatch({
-  //         type: "SET_USER",
-  //         user: null,
-  //       });
-  //     }
-  //   });
-  // }, []);
+      if (authUser) {
+        // the user just logged in / the user was logged in
+
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        // the user is logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+  }, []);
 
   return (
+    loading ?
+    <div className="sweet-loading">
+        
+       <video
+        src={vid}
+        loading={loading}  
+        autoPlay={true}       
+        />
+    </div>
+    :
     <Router>
       <div className="app">
+        
+         
+        
         <Switch>
+
           <Route path="/orders">
-            <Header />
+            <Navbar/>
             <Orders />
           </Route>
+
+          <Route path="/about">
+            <Navbar/>
+            <About/>
+          </Route>
+
           <Route path="/login">
+            <Navbar/>
             <Login />
           </Route>
+
           <Route path="/checkout">
-          <Navbar />
+             <Navbar />
             <Checkout />
           </Route>
+
+          <Route path="/download">
+             <Navbar />
+            <Download/>
+          </Route>
+
+
           <Route path="/payment">
             <Navbar />
-            {/* <Elements stripe={promise}> */}
-              <Payment />
-            {/* </Elements> */}
+            <Payment />
           </Route>
-<<<<<<< HEAD
+
           <Route path="/team">
             <Navbar />
-            {/* <Elements stripe={promise}> */}
-              <Team />
-            {/* </Elements> */}
-=======
-          <Route path ="/categories">
-            <Categories/>
->>>>>>> dde2bc24831197c9860bd8b2c3ea6e926e672c28
+            <Team />
           </Route>
+         
+          <Route path="/jaipur">
+            <Navbar />
+            <Jaipur/>
+          </Route>
+          <Route path="/kolkata">
+            <Navbar />
+            <Kolkata/>
+          </Route>
+          <Route path="/mathura">
+            <Navbar />
+            <Mathura/>
+          </Route>
+
+
+          <Route path="/categories">
+            <Navbar />
+            <Categories/>
+          </Route>
+          <Route path="/women">
+            <Navbar />
+            <Women/>
+          </Route>
+          <Route path="/child">
+            <Navbar />
+            <Women/>
+          </Route>
+          <Route path="/enviorment">
+            <Navbar />
+            <Women/>
+          </Route>
+          <Route path="/seniorcitizens">
+            <Navbar />
+            <Women/>
+          </Route>
+
           <Route path="/">
             <Navbar />
             <Home />
+            {/* <Categories/> */}
           </Route>
 
         </Switch>

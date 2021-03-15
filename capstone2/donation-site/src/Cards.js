@@ -1,13 +1,8 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import img from "./img-1.jpg";
-import img1 from "./img-2.jpg";
-import img2 from "./img-10.jpg";
-import img3 from "./img-11.jpg";
-import img4 from "./img-12.jpg";
-import img5 from "./img-6.jpg";
-import img6 from "./img-7.jpg";
+
+
 function Cards() {
   return (
     <div className='cards'>
@@ -16,39 +11,33 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={img}
+              src="https://lh5.googleusercontent.com/p/AF1QipMwjcFCSHHp0Hm5d1acxu0b5l2dahOvAUY2n7Fq=w408-h271-k-no"
               text='Save the orphans initiative '
-              label='Kolkata'
-              // path='/services'
+              label='Jaipur'
+              path='/jaipur'
               
             />
             <CardItem
-              src={img1}
-              text='Gyaan Initiative for underprevilaged kids'
-              label='Jaipur'
-              path='/services'
+              src="https://lh5.googleusercontent.com/p/AF1QipNohMO4EdPGVcFvVa_Iuueq82rwAqqt_5jyoXv1=w408-h544-k-no"
+              text='Nabatara NGO'
+              label='Kolkata'
+              path='/kolkata'
             />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src={img2}
+             <CardItem
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2017/07/22/594781-cow-shelter.jpg"
               text='Cow Shelter and old age home '
               label='Mathura'
-              path='/services'
+              path='/mathura'
             />
             <CardItem
-              src={img3}
+              src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/04/26/Pictures/_92672142-493d-11e8-8699-4e17514b3033.jpg"
               text='Pet Adoption and Rescue Center'
               label='Ahemdabad'
               path='/products'
             />
-            <CardItem
-              src={img4}
-              text='Clean Beaches Initiative'
-              label='Mumbai'
-              path='/sign-up'
-            />
           </ul>
+          
+        
         </div>
       </div>
     </div>

@@ -38,13 +38,15 @@ function Login() {
         
         <div className='login'>
 
-            <Link to='/'>
-            <h1 className="header_logo" >Happiness ♥ For You </h1>
-                {/* <img
+            {/* <Link to='/'
+            className="header_logo"
+            >
+            <h1  >Happiness ♥ For You </h1>
+                <img
                     className="login__logo"
                     src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
-                /> */}
-            </Link>
+                />
+            </Link> */}
 
             <div className='login__container'>
                 <h1>Sign-in</h1>
