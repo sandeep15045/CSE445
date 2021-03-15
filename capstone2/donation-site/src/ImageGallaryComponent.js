@@ -1,7 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-
 class ImageGallaryComponent extends React.Component {
 
     onChangeEvent = () => {
@@ -53,6 +52,18 @@ class ImageGallaryComponent extends React.Component {
                     <div>
                         <img src="https://picsum.photos/700/400?img=3" />
                         <p className="legend">Children NGO's</p>
+                    </div>
+                    <div>
+                        <img src= "./slider1" />
+                        <p className="legend"></p>
+                    </div>
+                    <div>
+                        <img src="./slider2.jpeg" />
+                        <p className="legend"></p>
+                    </div>
+                    <div>
+                        <img src="./slider3.jpeg" />
+                        <p className="legend"></p>
                     </div>
                 </Carousel>
             </div>
