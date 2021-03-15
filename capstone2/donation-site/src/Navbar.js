@@ -41,6 +41,10 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
+           
+          <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
+           
              H 4 U
              <p className="tagline">Help for You</p>
           </Link>
@@ -83,6 +87,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Download App
+                Donate/Vounteer
               </Link>
             </li>
 

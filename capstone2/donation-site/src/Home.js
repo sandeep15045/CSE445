@@ -7,6 +7,13 @@ import Cards from "./Cards";
 import Footer from "./Footer";
 import Categories from "./Categories";
 import Testinomial from "./testinomials"
+import video from './video.mp4';
+import ImageGallaryComponent from "./ImageGallaryComponent";
+import Categories from "./Categories";
+import Testinomial from "./testinomials"
+=======
+import video from './video.mp4';
+import ImageGallaryComponent from "./ImageGallaryComponent";
 
 function Home() {
   return (
@@ -16,6 +23,11 @@ function Home() {
       
         
           <Categories/>
+      <ImageGallaryComponent />
+     
+=======
+      <ImageGallaryComponent />
+     
         
         <h1 className="tags1">Testimonials</h1>
            <Testinomial/>
