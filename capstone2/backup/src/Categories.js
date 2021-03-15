@@ -17,11 +17,7 @@ function Categories() {
     return (
         <div>
             <div className="Head" >
-<<<<<<< HEAD
             <h1 className="tags1">Categories</h1>
-=======
-            <h1>Categories</h1>
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
             </div>
             <div className='cards'>
             <div className='cards__container'>
@@ -41,18 +37,13 @@ function Categories() {
             <CardItem2
             src={women}
             text='Women Health and Safety'
-<<<<<<< HEAD
             path="/women"
-=======
-
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
             />
             <CardItem2
             src={senior}
             text='Senior Citizen'
             path=""
             />
-<<<<<<< HEAD
             <CardItem2
             src={animal}
             text='Animal Welfare'
@@ -62,15 +53,7 @@ function Categories() {
             src={animal}
             text='Donation for Disasters'
             path=""
-=======
-            
-            <CardItem
-            src={animal}
-            text='Animal Welfare'
-            path = "./Animal"
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
             />
-            
             </ul>
             </div>
            </div>

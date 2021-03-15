@@ -8,7 +8,6 @@ import Jaipur from "./locations/jaipurNGOmap"
 import Payment from "./Payment";
 import Orders from "./Orders";
 import Navbar from "./Navbar";
-<<<<<<< HEAD
 import Team from "./Team";
 import Download from "./Download";
 import Categories from "./Categories";
@@ -20,12 +19,6 @@ import Kolkata from "./locations/kolkataNGO";
 import Mathura from "./locations/mathuraNGO";
 import PuffLoader from "react-spinners/PuffLoader";
 import vid from "./loadingvi.mp4"
-=======
-import Categories from './Categories';
-import Animal from './Animal';
-// import { auth } from "./firebase";
-// import { useStateValue } from "./StateProvider";
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 
@@ -116,7 +109,6 @@ function App() {
             <Navbar />
             <Payment />
           </Route>
-<<<<<<< HEAD
 
           <Route path="/team">
             <Navbar />
@@ -140,13 +132,6 @@ function App() {
           <Route path="/categories">
             <Navbar />
             <Categories/>
-=======
-          <Route path ="/categories">
-            <Categories/>
-          </Route>
-          <Route path ="/Animal">
-            <Animal/>
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
           </Route>
           <Route path="/women">
             <Navbar />

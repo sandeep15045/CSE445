@@ -40,12 +40,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-<<<<<<< HEAD
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-=======
-          <Link to='/Home' className='navbar-logo' onClick={closeMobileMenu}>
-           
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
              H 4 U
              <p className="tagline">Help for You</p>
           </Link>
@@ -72,7 +67,6 @@ function Navbar() {
                 About
               </Link>
             </li>
-<<<<<<< HEAD
             {/* <li className='nav-item'>
             <Link
                 to='/team'
@@ -82,19 +76,13 @@ function Navbar() {
               
               </Link>
             </li> */}
-=======
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
             <li className='nav-item'>
               <Link
                 to= {'/download'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-<<<<<<< HEAD
                 Download App
-=======
-                Donate/Vounteer
->>>>>>> 55f8d8d15712b4f5b9f7c5e6c9c11097b1dcb6cf
               </Link>
             </li>
 
